@@ -6,7 +6,9 @@ Medium 500
 Semi-bold 600
 Bold 700 */
 
-
+*::-webkit-scrollbar{
+    display: none;
+}
 
 :root{
     --primary-background:#0F1117;
@@ -96,20 +98,20 @@ border-radius: 10px;
     color: var(--primary-text-color);
 }
 .jumbotron img{
-    /* width: 100%; */
+    width: 100%;
     height: 500px;
 }
 
 
 .problem-container .card{
-    background-color: var(--card-bg-color);
-    border: 2px solid var(--card-border-color);
+    /* background-color: var(--card-bg-color); */
+    /* border: 2px solid var(--card-border-color); */
     padding: 0;
 }
 .problem-container img{
-    width: 234px;
-    height: 237px;
-    margin: auto;
+    width: 100%;
+    height: 5rem;
+    object-fit: contain;
 }
 
 .our-partners-container{
@@ -119,10 +121,15 @@ border-radius: 10px;
     color: var(--sub-heading-color);
 }
 .our-partner-img{
-    max-width: 100%; 
-    height: 5rem;
+    max-width: 200px;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    object-fit: contain;
 }
-
+.our-partners-container .card{
+    background-color: transparent;
+}
 
 ul.roadmap li {
     position: relative;
@@ -251,5 +258,112 @@ ul.roadmap h2{
 
 .navbar-links.active {
     display: flex;
+}
+}
+
+
+ .custom-card{
+    position:relative;
+    cursor: pointer;
+}
+
+ .custom-card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+ .custom-card .face.face1{
+    position: relative;
+    background: var(--card-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+ .custom-card:hover .face.face1{
+    background: var(--secondary-background);
+    transform: translateY(0);
+}
+
+ .custom-card .face.face1 .content{
+    transition: 0.5s;
+}
+
+ .custom-card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+ .custom-card .face.face1 .content img{
+    max-width: 100px;
+    
+}
+
+ .custom-card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: var(--secondary-text-color);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+ .custom-card .face.face2{
+    position: relative;
+    background: var(--card-border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+ .custom-card:hover .face.face2{
+    transform: translateY(0);
+}
+
+ .custom-card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ .custom-card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+
+@media (max-width:768px) {
+     .custom-card .face {
+        width: 250px;
+        height: 200px;
+        transition: 0.5s;
+    }
+}
+
+@media (max-width:570px){
+     .custom-card .face {
+        width: 100%;
+        height: 200px;
+        transition: 0.5s;
+    }
+}
+
+
+@media (max-width: 1199px){
+.jumbotron h1,h3{
+    text-align: center;
+}
+.jumbotron p{
+    width: auto;
+    text-align: center;
+}
+.jumbotron .btn{
+   margin: auto;
 }
 }

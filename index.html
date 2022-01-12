@@ -16,10 +16,16 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
     <title>Hackprint 1.0</title>
   </head>
-  <body>
+  <body
+    data-aos-easing="ease-in-out"
+    data-aos-duration="1000"
+    data-aos-delay="0"
+  >
     <div class="container mt-3">
       <nav class="navbar">
         <div class="logo">Logo</div>
@@ -53,75 +59,169 @@
     </div>
     <div class="container-fluid jumbotron pt-4 mt-4">
       <div class="container">
-        <div class="row">
-          <div class="pt-5 col-6 px-0">
-            <h1>Hackprint 1.0</h1>
-            <h3>learn | teach | explore</h3>
-            <p class="text-wrap">
+        <div class="row gx-5">
+          <div
+            class="pt-5 col-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 col-sm-12 px-0"
+          >
+            <h1 data-aos="fade-up">Hackprint 1.0</h1>
+            <h3 data-aos="fade-up" data-aos-delay="500">
+              learn | teach | explore
+            </h3>
+            <p data-aos="fade-up" data-aos-delay="500" class="text-wrap">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
             </p>
-            <div class="d-flex align-content-center">
+            <div
+              class="d-flex align-content-center"
+              data-aos="fade-up"
+              data-aos-delay="700"
+            >
               <button class="btn btn-outline-warning w-50 mt-4 btn-lg">
                 Register
               </button>
             </div>
           </div>
-          <div class="d-flex flex-column justify-content-center col-6">
-            <img src="/assests/hackathon(yellow) 1.svg" alt="" srcset="" />
+          <div
+            class="col-6 d-none d-md-none d-lg-none d-xl-block d-flex justify-content-center"
+          >
+            <img
+              class="w-100"
+              src="/assests/hackathon(yellow) 1.svg"
+              alt=""
+              srcset=""
+            />
           </div>
         </div>
       </div>
     </div>
     <div class="container problem-container mt-5">
       <div class="heading text-center">
-        <h2>Problem Statements</h2>
+        <h2 data-aos="fade-up">Problem Statements</h2>
       </div>
-      <div class="row mt-5 gx-5">
-        <div class="col-3">
-          <div class="card p-4">
-            <img src="/assests/blockchain 1.svg" />
-            <h2 class="text-center mt-5">Blockchain</h2>
+      <div class="row mt-5 mx-auto">
+        <div
+          class="d-flex justify-content-center col-md-6 col-lg-4 col-xxl-3 col-xl-4 col-sm-6 col-12"
+        >
+          <div class="custom-card">
+            <div class="face face1">
+              <div class="content d-flex align-items-center">
+                <img src="/assests/blockchain 1.svg" />
+                <h3 class="mx-3">BlockChain</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  cum cumque minus iste veritatis provident at.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card p-4">
-            <img src="/assests/AI/Ml vctr.svg" />
-            <h2 class="text-center mt-5">AI/ML</h2>
+        <div
+          class="d-flex justify-content-center col-md-6 col-lg-4 col-xxl-3 col-xl-4 col-sm-6 col-12"
+        >
+          <div class="custom-card">
+            <div class="face face1">
+              <div class="content d-flex align-items-center">
+                <img src="/assests/AI/Ml vctr.svg" />
+                <h3 class="mx-3">AI/ML</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  cum cumque minus iste veritatis provident at.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card p-4">
-            <img src="/assests/caduceus-2 1.svg" />
-            <h2 class="text-center mt-5">Health Care</h2>
+        <div
+          class="d-flex justify-content-center col-md-6 col-lg-4 col-xxl-3 col-xl-4 col-sm-6 col-12"
+        >
+          <div class="custom-card">
+            <div class="face face1">
+              <div class="content d-flex align-items-center">
+                <img src="/assests/caduceus-2 1.svg" />
+                <h3>Health Care</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  cum cumque minus iste veritatis provident at.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card p-4">
-            <img src="/assests/AR/VR vectr.svg" />
-            <h2 class="text-center mt-5">AR/MR/VR</h2>
+        <div
+          class="d-flex justify-content-center col-md-6 col-lg-4 col-xxl-3 col-xl-4 col-sm-6 col-12"
+        >
+          <div class="custom-card">
+            <div class="face face1">
+              <div class="content d-flex align-items-center">
+                <img src="/assests/AR/VR vectr.svg" />
+                <h3 class="mx-3">AR/VR/MR</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  cum cumque minus iste veritatis provident at.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="row justify-content-md-center gx-5 mt-5">
-        <div class="col-3">
-          <div class="card p-4">
-            <img src="/assests/Open Innovation Vectr.svg" />
-            <h2 class="text-center mt-5">Open Innovation</h2>
+      <div class="row justify-content-md-center gx-5">
+        <div class="col-md-6 col-lg-4 col-xxl-3 col-xl-4 col-sm-6 col-12">
+          <div class="custom-card">
+            <div class="face face1">
+              <div class="content d-flex align-items-center">
+                <img src="/assests/fintech.svg" />
+                <h3 class="mx-3">Fintech</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  cum cumque minus iste veritatis provident at.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-3">
-          <div class="card p-4">
-            <img src="/assests/fintech.svg " />
-            <h2 class="text-center mt-5">Fintech</h2>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="card p-4">
-            <img src="/assests/blockchain 1.svg" />
-            <h2 class="text-center mt-5">Social Cause</h2>
+
+        <div class="col-md-6 col-lg-4 col-xxl-3 col-xl-4 col-sm-6 col-12">
+          <div class="custom-card">
+            <div class="face face1">
+              <div class="content d-flex justify-content-center">
+                <img
+                  class="text-center"
+                  src="/assests/Open Innovation Vectr.svg"
+                />
+
+                <h3>Open Innovation</h3>
+              </div>
+            </div>
+            <div class="face face2">
+              <div class="content">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                  cum cumque minus iste veritatis provident at.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -132,54 +232,75 @@
           <h2>Our Partners</h2>
         </div>
         <div class="row gx-2">
-          <div class="col-4 mx-auto p-3">
-            <img
-              class="our-partner-img"
-              src="/assests/matrix logo.png"
-              alt=""
-              srcset=""
-            />
+          <div
+            class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 col-sm-6 mx-auto p-3"
+          >
+            <div class="card">
+              <img
+                class="our-partner-img"
+                src="/assests/matrix logo.png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
-
-          <div class="col-4 mx-auto p-3">
-            <img
-              class="our-partner-img"
-              src="/assests/axtel-logo-vector 1.png"
-              alt=""
-              srcset=""
-            />
+          <div
+            class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 col-sm-6 mx-auto p-3"
+          >
+            <div class="card">
+              <img
+                class="our-partner-img"
+                src="/assests/axtel-logo-vector 1.png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
-          <div class="col-4 mx-auto p-3">
-            <img
-              class="our-partner-img"
-              src="/assests/kanan-international-anand-logo 1.png"
-              alt=""
-              srcset=""
-            />
+          <div
+            class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 col-sm-6 mx-auto p-3"
+          >
+            <div class="card">
+              <img
+                class="our-partner-img"
+                src="/assests/kanan-international-anand-logo 1.png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
-          <div class="col-4 mx-auto p-3">
-            <img
-              class="our-partner-img"
-              src="/assests/reliance-petroleum-vector-logo 1.png"
-              alt=""
-              srcset=""
-            />
+          <div
+            class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 col-sm-6 mx-auto p-3"
+          >
+            <div class="card">
+              <img
+                class="our-partner-img"
+                src="/assests/reliance-petroleum-vector-logo 1.png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
-          <div class="col-4 mx-auto p-3">
-            <img
-              class="our-partner-img"
-              src="/assests/c-time-jaipur-3493 1.png"
-              alt=""
-              srcset=""
-            />
+          <div
+            class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 col-sm-6 mx-auto p-3"
+          >
+            <div class="card">
+              <img
+                class="our-partner-img"
+                src="/assests/c-time-jaipur-3493 1.png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
-          <div class="col-4 p-3">
-            <img
-              class="our-partner-img"
-              src="/assests/SEE 1.png"
-              alt=""
-              srcset=""
-            />
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 col-sm-6 p-3">
+            <div class="card">
+              <img
+                class="our-partner-img"
+                src="/assests/SEE 1.png"
+                alt=""
+                srcset=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -188,9 +309,9 @@
       <div class="heading text-center">
         <h2>Timeline</h2>
       </div>
-      <div class="row d-flex justify-content-center mt-5">
+      <div class="row gy-5 d-flex justify-content-md-center mt-5">
         <div
-          class="col-5 d-flex align-items-start flex-column justify-content-center"
+          class="col-md-5 col-xl-5 col-lg-5 col-xxl-5 col-sm-12 col-12 d-flex flex-column align-items-center"
         >
           <h4 class="alt">11.01.2022</h4>
           <h2 class="days">Monday</h2>
@@ -217,10 +338,12 @@
             </li>
           </ul>
         </div>
-        <div class="col-5 d-flex justify-content-center flex-column">
+        <div
+          class="col-md-5 col-xl-5 col-lg-5 col-xxl-5 col-sm-12 col-12 d-flex flex-column align-items-center"
+        >
           <h4 class="alt">11.01.2022</h4>
           <h2 class="days">Tuesday</h2>
-          <ul class="roadmap mt-5 x">
+          <ul class="roadmap mt-5">
             <li>
               <h4 class="alt">11:00 - 11:30</h4>
               <h2>Registration</h2>
@@ -251,7 +374,7 @@
         <h2>F.A.Qs</h2>
       </div>
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-sm-12 col-lg-6 col-xxl-6 col-xl-6">
           <div class="accordion accordion-flush" id="accordionFlushExample1">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -336,7 +459,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6 col-sm-12 col-lg-6 col-xxl-6 col-xl-6">
           <div class="accordion accordion-flush" id="accordionFlushExample2">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingFour">
@@ -442,26 +565,22 @@
         </div>
       </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript">
+      AOS.init();
+    </script>
   </body>
-  <script type="text/javascript">
-    // $(".main-carousel").flickity({
-    //   // options
-    //   cellAlign: "left",
-    //   contain: true,
-    //   groupCells: 2,
-    // });
-  </script>
+
   <script src="script.js"></script>
 </html>
