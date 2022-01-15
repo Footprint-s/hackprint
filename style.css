@@ -27,7 +27,7 @@ html{
 }
 body{
     overflow-x: hidden !important;
-
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     background-color: var(--primary-background);
@@ -41,6 +41,11 @@ justify-content: space-between;
 align-items: center;
 background-color: transparent;
 color: var(--secondary-text-color);
+}
+.navbar .logo img{
+    width: auto;
+    object-fit: contain;
+    height: 3.2rem;
 }
 
 hr{
@@ -67,7 +72,7 @@ font-weight: 600;
 color: var(--secondary-text-color);
 padding: 2rem;
 }
-.navbar-links li:hover {
+.navbar-links li a:hover {
 color: var(--primary-text-color) !important; 
 cursor: pointer;
 }
@@ -374,4 +379,70 @@ ul.roadmap h2{
 .jumbotron .btn{
    margin: auto;
 }
+}
+
+
+#rocketmeluncur {
+    position: fixed;
+    bottom: 50px;
+    z-index: 7;
+    display: none;
+    visibility: hidden;
+    width: 26px;
+    height: 48px;
+    right: 25px;
+    background: url(/assests/rocket\ 2.png) no-repeat 50% 0;
+
+    opacity: 0;
+    -webkit-transition: visibility .6s cubic-bezier(.6,.04,.98,.335),opacity .6s cubic-bezier(.6,.04,.98,.335),-webkit-transform .6s cubic-bezier(.6,.04,.98,.335);
+    -moz-transition: visibility .6s cubic-bezier(.6,.04,.98,.335),opacity .6s cubic-bezier(.6,.04,.98,.335),-moz-transform .6s cubic-bezier(.6,.04,.98,.335);
+    transition: visibility .6s cubic-bezier(.6,.04,.98,.335),opacity .6s cubic-bezier(.6,.04,.98,.335),transform .6s cubic-bezier(.6,.04,.98,.335)
+}
+
+#rocketmeluncur i {
+    display: block;
+    margin-top: 48px;
+    height: 14px;
+    background: url(https://1.bp.blogspot.com/-UR9I7YEuEUY/VXIJn8MrBPI/AAAAAAAAKRE/qZObHBd5zIo/s1600/rocket.png) no-repeat 50% -48px;
+    opacity: .5;
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    transition: transform .2s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0
+}
+
+#rocketmeluncur:hover {
+    background-position: 50% -62px
+}
+
+#rocketmeluncur:hover i {
+    background-position: 50% 100%;
+
+    -webkit-animation: flaming .7s infinite;
+    -moz-animation: flaming .7s infinite;
+    animation: flaming .7s infinite
+}
+
+#rocketmeluncur.showrocket {
+    visibility: visible;
+    opacity: 1
+}
+
+#rocketmeluncur.launchrocket {
+    background-position: 50% -62px;
+    opacity: 0;
+    -webkit-transform: translateY(-800px);
+    -moz-transform: translateY(-800px);
+    -ms-transform: translateY(-800px);
+    transform: translateY(-800px);
+    pointer-events: none
+}
+
+#rocketmeluncur.launchrocket i {
+    background-position: 50% 100%;
+    -webkit-transform: scale(1.4,3.2);
+    -moz-transform: scale(1.4,3.2);
+    transform: scale(1.4,3.2)
 }
