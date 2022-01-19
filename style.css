@@ -504,3 +504,14 @@ footer {
     align-items: center;
   }
 }
+
+@media (max-width: 892px) {
+  .jumbotron h1 {
+    font-size: 40px;
+  }
+}
+
+.fp-homepage {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
