@@ -515,3 +515,43 @@ footer {
   color: var(--primary-text-color);
   text-decoration: none;
 }
+
+.prize-section h1 {
+  color: var(--secondary-text-color);
+}
+
+.track-prize .card {
+  background-color: var(--card-bg-color);
+  width: 320px !important;
+  display: inline-flex !important;
+}
+.track-prize .card img {
+  padding: 10% 15% 0 15%;
+  width: auto;
+  height: 100px;
+  object-fit: contain;
+}
+
+@media (min-width: 1200px) {
+  .track-prize .card {
+    background-color: var(--card-bg-color);
+
+    display: inline-flex !important;
+  }
+}
+@media (max-width: 1399px) {
+  .track-prize .card {
+    width: auto !important;
+  }
+}
+@media (max-width: 991px) {
+  .track-prize .card {
+    width: 320px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .track-prize .card {
+    max-width: 280px !important;
+  }
+}
