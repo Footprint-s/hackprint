@@ -86,12 +86,9 @@
           <div
             class="col-6 d-none d-md-none d-lg-none d-xl-block d-flex justify-content-center"
           >
-            <img
-              class="w-100"
-              src="/assests/hackathon(yellow) 1.svg"
-              alt=""
-              srcset=""
-            />
+            <div class="w-100" id="illustration">
+
+            </div>
           </div>
         </div>
       </div>
@@ -826,6 +823,18 @@
     <script type="text/javascript">
       AOS.init();
     </script>
+     <script src="/bodymovin.js"></script>
+     <script>
+       $(document).ready(function onDocumentReady() {
+         var animation = bodymovin.loadAnimation({
+           container: document.getElementById("illustration"),
+           renderer: "svg",
+           loop: true,
+           autoplay: true,
+           path: "/data2.json",
+         });
+       });
+     </script>
   </body>
   <script src="/assests/script.js"></script>
   <script src="script.js"></script>
