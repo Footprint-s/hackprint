@@ -386,7 +386,7 @@ ul.roadmap h2 {
   width: 26px;
   height: 48px;
   right: 25px;
-  background: url(/assests/rocket\ 2.png) no-repeat 50% 0;
+  background: url(./assests/rocket\ 2.png) no-repeat 50% 0;
 
   opacity: 0;
   -webkit-transition: visibility 0.6s cubic-bezier(0.6, 0.04, 0.98, 0.335),
